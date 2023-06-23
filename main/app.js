@@ -43,14 +43,43 @@ function ready(){
 }
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
-    alert("Gracias por la compra");
+    
     //Elimino todos los elmentos del carrito
     let carritoItems = document.getElementsByClassName('carrito-items')[0];
     while (carritoItems.hasChildNodes()){
         carritoItems.removeChild(carritoItems.firstChild)
     }
     actualizarTotalCarrito();
-    ocultarCarrito();
+    carritoItems.style.backgroundColor = "white";
+    const carrito = document.getElementsByClassName('carrito')[0];
+    carrito.style.backgroundColor = "white";
+    
+    carritoItems.innerHTML = "Gracias por su compra!";
+    carritoItems.style.marginTop = "1em";
+    
+    
+    crearBoton();
+    //ocultarCarrito();
+}
+const crearBoton = () =>{
+    var refreshButton = document.createElement("button");
+    refreshButton.textContent = "ACEPTAR";
+    refreshButton.style.backgroundColor="#000";
+    refreshButton.style.border="none";
+    refreshButton.style.padding="20px";
+    refreshButton.style.color="#fff";
+    refreshButton.style.float = "center";
+    refreshButton.style.width = "100%";
+    refreshButton.style.marginTop = "1em";
+    refreshButton.style.cursor = "pointer";
+
+    const carritoTotal = document.getElementsByClassName('carrito-total')[0];
+    
+    let carritoItems = document.getElementsByClassName('carrito-items')[0];
+    carritoItems.appendChild(refreshButton);
+    const carrito = document.getElementsByClassName('carrito')[0];
+    carrito.removeChild(carritoTotal);
+    refreshButton.addEventListener("click", () => {location.reload();});
 }
 //Funciòn que controla el boton clickeado de agregar al carrito
 function agregarAlCarritoClicked(event){
@@ -195,11 +224,3 @@ function actualizarTotalCarrito(){
     document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
 
 }
-
-
-
-
-
-
-
-
