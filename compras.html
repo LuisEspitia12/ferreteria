@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/estilo.css">
+    <link rel="stylesheet" href="/styles/whatsapp.css">
+    <script src="/scripts/app.js" async></script>
+    <title>Ferreteria Generation | </title>
+</head>
+<body>
+    <!--Inicio de la sección de encabezado de la página.-->
+    <header>		
+        <!--NAVBAR-->
+                <nav>
+                    <!--Logo-->
+                    <div class="navbar-logo">
+                        <img class="nav-img" src="/img/LogoScrew.jpeg" alt="Logo">
+                        <a class="navbar-brand" href="/screens/index.html">LaFerre</a>
+                    </div>
+                    <!--MENU TOGGLE-->
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="/screens/index.html" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bottonRI.html" class="nav-link ">Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link ">Inicia Sesion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#somos" class="nav-link ">Nosotros</a>
+                        </li>
+                    </ul>
+                    <!--BUTTONS-->
+                    <div class="btns">
+                        <a class="btn-us" type="button" href="#somos">Nosotros</a>
+                        <a class="btn-register" type="button" href="bottonRI.html">Registrarse</a>
+                        <a class="btn-login" type="button" href="login.html">Inicia Sesión</a>
+                        <a class="btn-cart" type="button" href="#"><i class="fa-solid fa-cart-shopping" style="color: black;"></i> </a>
+                    </div>
+                </nav>
+    </header>
+    <!--NAVBAR END-->
+
+    <!--**SEARCH-BAR**-->
+    <div class="search--div"> 
+        <input  class = "search--bar" type="text"  placeholder= "Buscar..."name="Texto" required>
+       <div class="icon-search"> <i class="fa-solid fa-magnifying-glass" style="color: black;"></i> 
+        <div class="space-search"></div>
+    </div>   
+</div>
+    <!--*****SEARCH-BAR END*****-->
+
+    
+
+    <!--WHATSAPP BUTTON-->
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+   rel="stylesheet">
+         <div class="popup-whatsapp fadeIn">
+             <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                   <i class="material-icons icon-font-color">close</i>
+                 </button> 
+               
+                <p> <img src="/img/secretary.png" width="35">  Hola, ¿cómo podemos ayudate? </p>
+                
+             </div>
+             <div class="content-whatsapp -bottom">
+               <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+                
+       
+                 <button class="send-msPopup" id="send-btn" type="button">
+                     <i class="material-icons icon-font-color--black">send</i>
+                 </button>
+
+             </div>
+         </div>
+         <button type="button" id="whats-openPopup" class="whatsapp-button">
+             <div class="float" >
+<i class="fa fa-whatsapp my-float"></i></div>
+         </button>
+         <div class="circle-anime"></div>
+     </div>
+
+    <script src="https://kit.fontawesome.com/e8d0c66caa.js" crossorigin="anonymous"></script>
+
+    <!--WHATSAPP BUTTON END-->
+    <!--Inicio de una sección con la clase "contenedor".-->
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <!-- Inicio de un elemento en el contenedor.-->
+            <div class="item">
+                <!--span es un elemento de marcado utilizado para aplicar estilos o agrupar contenido en línea dentro de un documento HTML.-->
+                <!--Un elemento de texto con la clase "titulo-item" que muestra el título "Box Engasse".-->
+                <span class="titulo-item">DESTORNILLADOR INALAMBRICO 3.6 VOLT</span>
+                <!--Una imagen con la ruta de origen "img/boxengasse.png", un atributo alternativo vacío y la clase "img-item".-->
+                <img src="img/destonillador.jpg" alt="" class="img-item" id="image-tam">
+                <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                <span class="precio-item">$220,000</span>
+                <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">MOTOTOOL ELECTRICO, 100 ACC </span>
+                <img src="img/MOTOTOOL ELECTRICO.jpg" alt="" class="img-item" id="image-tam">
+                <span class="precio-item">$124.990</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">LIJADORA PROFESIONAL DE PALMA</span>
+                <img src="img/Lijadora.jpg" alt="" class="img-item">
+                <span class="precio-item">$259.854</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Tapa Oidos Industrial Tipo Pelcor E-3009</span>
+                <img src="img/Tapaoidos.jpg" alt="" class="img-item" id="image-tam">
+                <span class="precio-item">$39.443</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Prensa Rápida Para Carpintería # 8</span>
+                <img src="img/prensa.jpg" alt="" class="img-item">
+                <span class="precio-item">$20.900</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Cortadora Concreto de 1240W - 220V</span>
+                <img src="img/cortadora.jpg" alt="" class="img-item">
+                <span class="precio-item">$249.999</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Prensa Para Esquinas 90 grados</span>
+                <img src="img/prensaesquinas.jpg" alt="" class="img-item" id="image-tam1">
+                <span class="precio-item">$54.900</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Kit De Accesorios Fresas 276</span>
+                <img src="img/kit.jpg" alt="" class="img-item">
+                <span class="precio-item">$99.900</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Decametro Cinta 50 Metros Amarillo</span>
+                <img src="img/decametro.jpg" alt="" class="img-item">
+                <span class="precio-item">$32.900</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Rotomartillo Demoledor Ferton</span>
+                <img src="img/herra.jpg" alt="" class="img-item">
+                <span class="precio-item">$478.900</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Taladro De Arbol 13mm 350w </span>
+                <img src="img/taladroarbol.jpg" alt="" class="img-item">
+                <span class="precio-item">$569.900</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pistola Aire Caliente 2000w Ferton</span>
+                <img src="img/pistolaaire.jpg" alt="" class="img-item">
+                <span class="precio-item">$119.900</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items"> 
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="/scripts/index.js"></script>
+    <script src="/scripts/whatsapp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
