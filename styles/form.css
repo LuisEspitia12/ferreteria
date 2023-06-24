@@ -1,0 +1,229 @@
+/*Formulario Login*/
+.text-Login{
+    margin:10px 28%; 
+    width: 43.6%;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 28%;
+    width: 43.6%;
+    margin-bottom: 25px;
+    height: 50vh;
+    align-items:center;
+    justify-content: center;
+    background-color: #F1C40F;
+    border-radius: 50px;
+    gap: 10px;
+    font-weight: 500;
+    color: black;
+    font-family: nunito;
+}
+
+form label{
+    margin-left: 8px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 5px;
+}
+
+.contact-form input{
+    border-radius: 10px;
+    min-width: 230px;
+    max-width: 500px;
+    height: 25px;
+    border: none;
+    padding: 0 8px;
+    margin-left: 5px;
+}
+
+.contact-form input[type="submit"]{
+    display: block;
+    min-width: 100px;
+    max-width: 200px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.contact-form input[type="submit"]:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+input.inline{
+    min-width: unset;
+    max-width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+textarea{
+    display: block;
+    border: none;
+    border-radius: 10px;
+    padding: 1px 8px;
+    width: 100%;
+    height: 70px;
+}
+
+.contact-form hr{
+    width: 70%;
+    border: 1px solid rgba(21, 20, 20, 0.4);
+}
+
+#terms-and-conditions{
+    margin-left: 20px;
+}
+
+.terms-link{
+    color: white;
+}
+
+.terms-link:hover{
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 800;
+}
+
+
+.login-form input{
+    border-radius: 12px;
+    height: 25px;
+    border: none;
+    padding: 0 8px;
+}
+
+.login-form input[type="submit"]{
+    margin: 0 auto;
+    width: 110px;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: white;
+}
+
+.login-form input[type="submit"]:hover{
+    background-color: rgba(255, 255, 255, 0.858);
+}
+.a-form{
+    color: white;
+    margin: 0px 1px;
+}
+
+#icon-eye{
+     transform: translateY(-150%) translateX(92%);
+  }
+.recuerdame{
+    flex-direction: row;
+    justify-content:left;
+    margin: 0;
+}
+/*Estilos pop up Swal Alert*/
+ 
+.swal2-title {
+    position: relative;
+    max-width: 100%;
+    margin: 0 0 .4em;
+    padding: 0;
+    color: #050505;
+    font-size: 1.875em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+    word-wrap: break-word;
+    font-family: nunito;
+}
+.swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color:  #F1C40F;
+    color: #fff;
+    font-size: 1em;
+}
+
+/*Estilos Form Registro*/
+.h1-regis{
+    color: white;
+    text-align: center;
+    font-family: nunito;
+}
+.signup-form input{
+    border-radius: 12px;
+    height: 25px;
+    border: none;
+    padding: 0 8px;
+}
+
+.signup-form input[type="submit"]{
+    margin: 0 auto;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: white;
+}
+
+.signup-form input[type="submit"]:hover{
+    background-color:white;
+}
+
+.opc-h1{
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+}
+.btns-users{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-per {
+    display: flex;
+    margin: 0 auto;
+    width: 110px;
+    height: 35px;
+    border-radius: 15px;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: white; 
+    color: #000000;
+    align-items: center;
+    
+}
+.btn-com {
+    display: flex;
+    margin: 0 auto;
+    width: 110px;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: white; 
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+}
+#choose-signup{
+    margin: 50px 28%;
+}
