@@ -233,7 +233,7 @@ function mostrar_nombreUser(){
         let userActual= [];
         userActual.push(usuarios[usuarios.length-1].name);
         console.log(userActual);
-        document.getElementById("welcomeUser").innerHTML = "<h3> Bienvenid@, "+ userActual+"</h3>";
+        document.getElementById("welcomeUser").innerHTML = "<h3> Bienvenid@ "+ userActual+"</h3>";
     }
 }
 mostrar_nombreUser();

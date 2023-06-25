@@ -127,6 +127,10 @@ a{
     font-weight: bold;
 }
 
+#welcomeUser{
+    display: none;
+}
+
 /*Buscador */
 .search--div{
     display: flex;
@@ -399,6 +403,7 @@ strong{
     scale: 1.05;
 }
 
+
 /* SECCION RESPONSIVE */
 @media screen and (max-width: 850px) {
     .contenedor {
@@ -469,5 +474,9 @@ strong{
 
     .btn-cart:hover{
         color: #F1C40F;
+    }
+
+    #welcomeUser{
+        display: flex;
     }
   }
