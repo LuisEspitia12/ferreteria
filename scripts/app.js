@@ -224,3 +224,18 @@ function actualizarTotalCarrito(){
     document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
 
 }
+
+//Mostrar nombre usuario
+
+function mostrar_nombreUser(){
+    if(localStorage.getItem("users")){
+        let usuarios = JSON.parse(localStorage.getItem("users"));
+        let userActual= [];
+        userActual.push(usuarios[usuarios.length-1].name);
+        console.log(userActual);
+        document.getElementById("welcomeUser").innerHTML = "<h3> Bienvenid@, "+ userActual+"</h3>";
+    }
+}
+mostrar_nombreUser();
+
+
