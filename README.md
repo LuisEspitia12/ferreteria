@@ -1,4 +1,4 @@
-# ferreteria
+# Ferreteria
 E-commerce Ferreteria Generation
 
 Realizado para el 2° Hackaton del Bootcamp de Generation: 
